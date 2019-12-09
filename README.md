@@ -1,2 +1,2 @@
 # goodly
-test task without adaptive 
+test task
