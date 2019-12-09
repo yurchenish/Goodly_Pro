@@ -28,8 +28,8 @@ body
         cursor: pointer
     &_icon
       margin-right: -115px
-      cursor: pointer
       &-img
+        cursor: pointer
         margin-right: 9px
 .container
   // margin: auto
@@ -69,7 +69,6 @@ body
       right: 141px
       top: 214px
       z-index: 1
-      // bottom: -50px
       overflow: visible
   &-text
     width: 485px
@@ -77,10 +76,8 @@ body
     bottom: 61px
     text-align: center
     display: inline-flex
-    // border: 5px solid #f8f8f8
     text-shadow: 0 4px 8px rgba(248, 248, 248, 0.75)
     color: #de2c2f
-    // color: #ba1715
     font-family: Arctikascript
     font-size: 108px
     font-weight: 400
@@ -98,6 +95,8 @@ body
   max-width: 973px
   height: 118px
   background-image: url(../img/event-bg.png)
+  &-bg
+    display: none
   &-left
     position: relative
     bottom: 26px
@@ -344,18 +343,293 @@ body
       color: #ffffff
     &-first
       margin-top: -4px
-
 @media (max-width: 576px)
   .header
+    top: 0
+    width: 100%
     &-logo
       width: 100%
       &_img
         margin-left: 0
+        width: 50%
+        &-11
+          height: 100%
+          width: 100%
+        &-1
+          margin-left: 10px
+          width: 20%
+        &-2
+          width: 50%
       &_icon
-        margin-right: 0
+        margin-right: 0px
+        width: 125px
+        &-img
+          width: 19%
+        &-img-3
+          margin-right: 0
+  .discount
+    display: none
+  .carpediem
+    display: none
+  .event
+    margin: 80px auto 15px auto
+    text-align: center
+    height: 118px
+    background-image: none
+    background-size: cover
+    &-bg
+      margin: auto
+      display: block
+      width: 97%
+      height: 115px
+      position: relative
+    &-left
+      display: none
+    &-right
+      display: none
+    &-text
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      // width: auto
+      text-align: center
+      top: 85px
+      margin: 0 auto
+      padding: 0 0
+      font-size: 18px
+      font-weight: 400
+      line-height: 52.5px
+      letter-spacing: 1.92px
+      &-14
+        font-size: 25px
+  .products
+    &-block
+      width: 290px
+      height: 683px
+      margin-bottom: 44px
+      &_percent
+        display: none
+      &_img
+        text-align: center
+        width: 100%
+        margin-left: -12px
+        margin-top: 10px
+        &-1
+          width: 50%
+      &_order
+        margin-top: 10px
+        width: 100%
+        text-align: center
+        margin-right: 0px
+        &-price
+          width: 170px
+          height: 59px
+          &-1
+            font-size: 20px
+            margin-left: 12px
+            margin-top: 2px
+          &-2
+            font-size: 26px
+            margin-left: 12px
+            margin-top: -2px
+        &-button
+          &-buy
+            width: 140px
+            padding: 6px 0px 6px 0px
+            text-align: center
+            font-size: 20px
+          &-detail
+            width: 140px
+            padding: 4px 0px 4px 0px
+            margin-top: 9px
+            font-size: 20px
+        &-important
+          float: inherit
+          font-size: 16px
+          margin: 0px 5px 0 0
+        &-overlay
+          width: 290px
+          height: 320px
+          bottom: 65px
+          left: 15px
+          &-text
+            padding: 20px 20px 5px 20px
+            font-size: 18px
+            &-1
+              margin: 14px 0
 
-
-
+      &_information
+        padding-top: 15px
+        margin-left: 0px
+        &-title
+          font-size: 20px
+          text-align: center
+        &-subtitle
+          text-align: center
+          font-size: 20px
+        &-text
+          text-align: center
+          font-size: 18px
+          line-height: 20px
+          margin-bottom: 22px
+          letter-spacing: 0px
+          width: 290px
+          padding: 0px 11px
+        &-recommend
+          padding-top: 6px
+          width: 290px
+          text-align: center
+          margin-left: 0px
+          &-text
+            font-size: 16px
+            letter-spacing: 0.20px
+          &-icon
+            text-align: center
+            width: 300px
+            padding-left: 0px
+            &-1
+              width: 80%
+  .form
+    padding: 22px 1px 22px 1px
+    border: 2px dotted #608f7f
+    margin-bottom: 30px
+    &-png
+      &-l
+        display: none
+      &-r
+        display: none
+    &_input
+      &-name
+        font-size: 18px
+        padding: 7px 45px 9px 45px
+        margin-right: 0px
+        margin-bottom: 5px
+      &-mail
+        font-size: 18px
+        padding: 7px 45px 9px 45px
+        margin-right: 0px
+        margin-bottom: 5px
+    &_button
+      font-size: 18px
+      padding: 6px 23px 9px 23px
+  .footer
+    height: 124px
+    &-text
+      line-height: 33.33px
+      opacity: 0.8
+      &_link
+      &-first
+        margin-top: -4px
+@media screen and (min-width: 577px) and (max-width: 768px)
+  .header
+    top: 0
+    &-logo
+      width: 100%
+      &_img
+        margin-left: 0px
+        width: 250px
+      &_icon
+        margin-right: 0px
+        width: 225px
+  .discount
+    display: none
+  .carpediem
+    display: none
+  .event
+    margin: 80px auto 15px auto
+    text-align: center
+    height: 118px
+    background-image: none
+    background-size: cover
+    &-bg
+      margin: auto
+      display: block
+      width: 97%
+      height: 115px
+      position: relative
+    &-left
+      display: none
+    &-right
+      display: none
+    &-text
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      text-align: center
+      top: 105px
+      margin: 0 auto
+      padding: 0 0
+      font-size: 23px
+      font-weight: 400
+      line-height: 52.5px
+      letter-spacing: 1.92px
+      &-14
+        font-size: 38px
+  .products
+    &-block
+      &_percent
+        right: 39px
+  .form
+    &-png
+      &-l
+        display: none
+      &-r
+        display: none
+    &_input
+      &-name
+        margin-bottom: 10px
+      &-mail
+        margin-bottom: 10px
+  .footer
+    height: 124px
+@media screen and (min-width: 769px) and (max-width: 992px)
+  .header
+    top: 0
+    &-logo
+      width: 100%
+  .discount
+    display: none
+  .carpediem
+    display: none
+  .event
+    margin: 90px auto 15px auto
+  .products
+    &-block
+      &_percent
+        right: 130px
+  .form
+    &-png
+      &-l
+        display: none
+      &-r
+        display: none
+  .footer
+    height: 154px
+@media screen and (min-width: 992px) and (max-width: 1200px)
+  .header
+    top: 0
+    &-logo
+      width: 100%
+  .discount
+    &_img
+      &-snowman
+        display: none
+      &-sale
+        display: none
+    &-text
+      right: 230px
+      &-1
+        padding-bottom: 25px
+  .products
+    &-block
+      &_percent
+        right: 10px
+  .form
+    &-png
+      &-l
+        display: none
+      &-r
+        display: none
 @font-face
   font-family: Arctikascript
   src: url("../fonts/7838.ttf") format("truetype")
